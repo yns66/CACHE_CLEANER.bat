@@ -10,7 +10,7 @@ if not "%1"=="amirequested" (
 
 :: DISM, Cache(Prefetch & Temp Klasörü) temizleme ve SFC komutları
 
-del /s /q C:\Windows\Prefetch\* && del /s /q C:\Windows\Temp\*
+del /s /q %windir%\Prefetch\* && del /s /q %windir%\Temp\*
 
 dism.exe /online /cleanup-image /analyzecomponentstore
 
